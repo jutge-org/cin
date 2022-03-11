@@ -1,0 +1,2 @@
+# cin
+Easily read input
