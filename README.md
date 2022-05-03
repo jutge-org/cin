@@ -100,11 +100,13 @@ When importing the `cin` package, the maximum depth of the Python interpreter st
 
 The variable `cin.version` contains the version of the package
 
+# License
+
+Apache License 2.0
+
 # Credits
 
 - [Jordi Petit](https://github.com/jordi-petit)
 
-# License
-
-Apache License 2.0
+Copyright 2022, Universitat Politècnica de Catalunya
 
