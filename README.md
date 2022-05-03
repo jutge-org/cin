@@ -102,7 +102,7 @@ The variable `cin.version` contains the version of the package
 
 # Credits
 
-- [Jordi Petit](https://github.com/jordi-petit 
+- [Jordi Petit](https://github.com/jordi-petit)
 
 # License
 
