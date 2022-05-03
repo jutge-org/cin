@@ -108,5 +108,6 @@ Apache License 2.0
 
 - [Jordi Petit](https://github.com/jordi-petit)
 
-Copyright 2022, Universitat Politècnica de Catalunya
+© Universitat Politècnica de Catalunya, 2022
+
 
