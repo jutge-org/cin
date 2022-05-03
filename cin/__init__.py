@@ -1,15 +1,17 @@
 """
-basicinput package
-https://github.com/jutge-org/basicinput
+cin package
+https://github.com/jutge-org/cin
 """
 
 import sys
-
 from typing import Optional, TypeVar, Type, Iterator
 
 
 version = '1.0'
 """package version"""
+
+
+sys.setrecursionlimit(1000000)  # hack to get more stack size
 
 
 T = TypeVar('T', int, float, str)

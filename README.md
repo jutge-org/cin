@@ -2,15 +2,11 @@
 
 This tiny package offers an easy, basic and simple interface to read input in Python. It is built in order to offer beginners an easy interface to read data in and to provide static type checking. 
 
-<br>
-
 # Installation
 
 - Install with `pip3 install cin`.
 - Upgrade to latest version with `pip3 install --upgrade cin`.
 - Uninstall with `pip3 uninstall cin`.
-
-<br>
 
 # Usage
 
@@ -68,7 +64,7 @@ Tokens are separated by whitespace, so that `read|scan(str)` returns the next si
 
 In the event no more tokens are available, `scan` returns `None`, but `read` throws an exception. 
 
-Also, in the event that the current token does not represent a value of the requested type, `scan` returns `None`, but `read` throws an exception. This could happen, for instace, when `read|scan(int)` attempt to read a non numeric input.
+Also, in the event that the current token does not represent a value of the requested type, `scan` returns `None`, but `read` throws an exception. This could happen, for instace, when `read|scan(int)` attempt to read a non integer token.
 
 Besides typing, the important difference between `read` and `scan` and the `input` built-in function is that `read` and `scan` are able to get their tokens among one or more lines, whereas `input` works on just one single line. On the other hand, it is not possible to 
 obtain whitespaces with `read` and `scan`.
@@ -89,12 +85,10 @@ read(int)        : int
 read(float)      : float
 read(str)        : str
 
-scan(int)       : Optional[int]
-scan(float)     : Optional[float]
-scan(str)       : Optional[str]
+scan(int)         : Optional[int]
+scan(float)      : Optional[float]
+scan(str)        : Optional[str]
 ```
-
-<br>
 
 # Extra features
 
@@ -104,13 +98,11 @@ When importing the `cin` package, the maximum depth of the Python interpreter st
 
 ## Version
 
-The variable `cin.version` contains the version of the package.
-<br>
+The variable `cin.version` contains the version of the package
 
 # Credits
 
-- [Jordi Petit](https://github.com/jordi-petit )
-<br>
+- [Jordi Petit](https://github.com/jordi-petit 
 
 # License
 
