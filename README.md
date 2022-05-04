@@ -2,11 +2,13 @@
 
 This tiny package offers an easy, basic and simple interface to read input in Python. It is built in order to offer beginners an easy interface to read data in and to provide static type checking. 
 
+
 # Installation
 
 - Install with `pip3 install cin`.
 - Upgrade to latest version with `pip3 install --upgrade cin`.
 - Uninstall with `pip3 uninstall cin`.
+
 
 # Usage
 
@@ -21,6 +23,7 @@ from cin import read
 
 x = read(int)
 y = read(int)
+
 print(x + y)
 ```
 
@@ -31,6 +34,7 @@ import cin
 
 x = cin.read(float)
 y = cin.read(float)
+
 print(x * y)
 ```
 
@@ -54,7 +58,8 @@ while x is not None:
 print(x)
 ```
 
-Consequently, the difference between `read` and `scan` is that the latter returns `None` when input is over or content is not correct, whereas the former fails. In fact, `read` just performs a `scan` and asserts it is not `None`.
+Consequently, the difference between `read` and `scan` is that the latter returns `None` when input is over or content is not correct, whereas the former fails. In fact, `read` just performs a `scan` and checks it is not `None`.
+
 
 ## Tokens
 
@@ -90,19 +95,36 @@ scan(float)      : Optional[float]
 scan(str)        : Optional[str]
 ```
 
+
+## Exceptions
+
+`read`:
+
+- Raises `EOFError` if trying to read past the end of the input.
+- Raises `ValueError` if the read word does not match the type `t`.
+- Raises `TypeError` if `t` is not `int`, `float` or `str`.
+
+`scan`:
+
+- Raises `TypeError` if `t` is not `int`, `float` or `str`.
+
+
 # Extra features
 
 ## Recursion limit
 
 When importing the `cin` package, the maximum depth of the Python interpreter stack is increased (using `sys.setrecursionlimit(1000000)`).  
 
+
 ## Version
 
 The variable `cin.version` contains the version of the package
 
+
 # License
 
 Apache License 2.0
+
 
 # Credits
 

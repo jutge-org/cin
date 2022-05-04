@@ -23,7 +23,7 @@ def read(t: Type[T]) -> T:
 
     Raises EOFError if trying to read past the end of the input.
     Raises ValueError if the read word does not match the type t.
-    Raises and assertion if t is not int, float or str.
+    Raises TypeError if t is not int, float or str.
     """
 
     _check(t)
@@ -40,7 +40,7 @@ def scan(t: Type[T]) -> Optional[T]:
     Returns None when trying to read past the end of the input
     or if the read word does not match the type t.
 
-    Raises and assertion if t is not int, float or str.
+    Raises TypeError if t is not int, float or str.
     """
 
     _check(t)
@@ -56,7 +56,8 @@ def scan(t: Type[T]) -> Optional[T]:
 
 def _check(t: Type[T]) -> Optional[str]:
     """Check that the type t is valid."""
-    assert t in [int, float, str], f'invalid type {t.__name__}'
+    if t not in [int, float, str]:
+        raise TypeError
 
 
 def _get() -> Optional[str]:
